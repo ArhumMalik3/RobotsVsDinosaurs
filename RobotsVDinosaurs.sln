@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobosVsDinos", "RobosVsDinos\RobosVsDinos.csproj", "{593E76D1-220B-450A-A8DE-6A00C4B39471}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotsVDinosaurs", "RobotsVDinosaurs\RobotsVDinosaurs.csproj", "{12B993FB-EF76-42FE-AB3A-40FC024BF4CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{593E76D1-220B-450A-A8DE-6A00C4B39471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{593E76D1-220B-450A-A8DE-6A00C4B39471}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{593E76D1-220B-450A-A8DE-6A00C4B39471}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{593E76D1-220B-450A-A8DE-6A00C4B39471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B993FB-EF76-42FE-AB3A-40FC024BF4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B993FB-EF76-42FE-AB3A-40FC024BF4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B993FB-EF76-42FE-AB3A-40FC024BF4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B993FB-EF76-42FE-AB3A-40FC024BF4CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FED64F10-A29B-4DFA-8010-AF5AA4C1F4D6}
+		SolutionGuid = {BCB33F33-859C-48F6-B14A-2B441C2CDC6A}
 	EndGlobalSection
 EndGlobal
