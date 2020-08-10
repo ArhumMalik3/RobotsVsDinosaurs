@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{934DCFC1-B543-44DF-8811-3E9DE2AAE47B}</ProjectGuid>
+    <ProjectGuid>{593E76D1-220B-450A-A8DE-6A00C4B39471}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>RoboVsDIno</RootNamespace>
-    <AssemblyName>RoboVsDIno</AssemblyName>
+    <RootNamespace>RobosVsDinos</RootNamespace>
+    <AssemblyName>RobosVsDinos</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

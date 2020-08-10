@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RoboVsDIno")]
+[assembly: AssemblyTitle("RobosVsDinos")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP Inc.")]
-[assembly: AssemblyProduct("RoboVsDIno")]
+[assembly: AssemblyProduct("RobosVsDinos")]
 [assembly: AssemblyCopyright("Copyright © HP Inc. 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("934dcfc1-b543-44df-8811-3e9de2aae47b")]
+[assembly: Guid("593e76d1-220b-450a-a8de-6a00c4b39471")]
 
 // Version information for an assembly consists of the following four values:
 //
