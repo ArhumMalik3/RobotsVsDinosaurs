@@ -8,60 +8,114 @@ namespace RobotsVDinosaurs
 {
     class Battlefield
     {
+        public double battleNumber = 0;
         Fleet fleet = new Fleet();
         Herd herd = new Herd();
+        Random rand;
 
         public void AttackingDino()
         {
-            fleet.robot1.AttackDino(herd.dino1);
+            if (fleet.robots.Count == 3)
+            {
+                fleet.robots[0].AttackDino(herd.dinosaurs[0]);
+                fleet.robots[1].AttackDino(herd.dinosaurs[0]);
+                fleet.robots[2].AttackDino(herd.dinosaurs[0]);
+            }
+            else if (fleet.robots.Count == 2)
+            {
+                fleet.robots[0].AttackDino(herd.dinosaurs[0]);
+                fleet.robots[1].AttackDino(herd.dinosaurs[0]);
+            }
+            else if (fleet.robots.Count == 1)
+            {
+                fleet.robots[0].AttackDino(herd.dinosaurs[0]);
+            }
             
-            //fleet.robot2.AttackDino(herd.dino2);
-            //Dinosaur dinoTwo = herd.dino2;
-            //fleet.robot3.AttackDino(herd.dino3);
-            //Dinosaur dinoThree = herd.dino3;
-
         }
 
 
         public void AttackingRobot()
         {
-            herd.dino1.AttackRobot(fleet.robot1);
-            Robot robo = fleet.robot1;
+            if (herd.dinosaurs.Count == 3)
+            {
+                herd.dinosaurs[0].AttackRobot(fleet.robots[0]);
+                herd.dinosaurs[1].AttackRobot(fleet.robots[0]);
+                herd.dinosaurs[2].AttackRobot(fleet.robots[0]);
+            }
+            else if (herd.dinosaurs.Count == 2)
+            {
+                herd.dinosaurs[0].AttackRobot(fleet.robots[0]);
+                herd.dinosaurs[1].AttackRobot(fleet.robots[0]);
+            }
+            else if (herd.dinosaurs.Count == 1)
+            {
+                herd.dinosaurs[0].AttackRobot(fleet.robots[0]);
+            }
+            
+
 
         }
+
+        public void BattleOverview()
+        {
+            battleNumber++;
+            Console.WriteLine($"After Battle {battleNumber}, the match stats are: ");
+            Console.WriteLine(" ");
+            Console.ReadLine();
+
+            foreach(Robot robot in fleet.robots)
+            {
+                Console.WriteLine($"Robot: {robot.name}  Health: {robot.health} ");
+                Console.ReadLine();
+            }
+
+            foreach(Dinosaur dinosaur in herd.dinosaurs)
+            {
+                Console.WriteLine($"Dinosaur: {dinosaur.type}  Health: {dinosaur.health} ");
+                Console.ReadLine();
+            }
+
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.ReadLine();
+
+
+        }
+
         public void RunBattle()
         {
-            if (fleet.robot1.health > 0 && herd.dino1.health > 0)
+            while (fleet.robots.Count >= 1 && herd.dinosaurs.Count >= 1)
             {
                 AttackingRobot();
                 AttackingDino();
-                double newRobotHealth = fleet.robot1.health;
-                double newDinoHealth = herd.dino1.health;
+
+                BattleOverview();
+
+
+
+
+                fleet.RobotDying();
+                herd.DinoDying();
                 
 
-                Console.WriteLine($"The Robots health is {newRobotHealth}. The Dinosaurs health is {newDinoHealth}. ");
-                Console.ReadLine();
 
 
-
-               
             }
-            else
-            {
-                ConclusionOfBattle();
-            }
+
+            ConclusionOfBattle();
 
 
         }
 
         public void ConclusionOfBattle()
         {
-            if (fleet.robot1.health <= 0 || fleet.robot2.health <= 0 || fleet.robot3.health <= 0)
+            if (fleet.robots.Count == 0)
             {
                 Console.WriteLine("The battle is over, the Dinosaurs have won!");
                 Console.ReadLine();
             }
-            else if (herd.dino1.health <= 0 || herd.dino2.health <= 0 || herd.dino3.health <= 0)
+            else if (herd.dinosaurs.Count == 0)
             {
                 Console.WriteLine("The battle is over, the Robots have won!");
                 Console.ReadLine();

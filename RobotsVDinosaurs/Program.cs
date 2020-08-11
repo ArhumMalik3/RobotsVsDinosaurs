@@ -12,11 +12,7 @@ namespace RobotsVDinosaurs
         {
             Battlefield battlefield = new Battlefield();
             battlefield.RunBattle();
-            battlefield.RunBattle();
-            battlefield.RunBattle();
-            battlefield.RunBattle();
-            battlefield.RunBattle();
-            battlefield.RunBattle();
+            
         }
     }
 }

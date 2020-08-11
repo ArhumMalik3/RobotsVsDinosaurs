@@ -11,11 +11,34 @@ namespace RobotsVDinosaurs
         public Dinosaur dino1;
         public Dinosaur dino2;
         public Dinosaur dino3;
+        public List<Dinosaur> dinosaurs = new List<Dinosaur>();
+       
+
+
         public Herd()
         {
             dino1 = new Dinosaur("Tryannosaurus", 70, 100, 150);
             dino2 = new Dinosaur("Triceratops", 110, 100, 110);
             dino3 = new Dinosaur("Velociraptor", 90, 100, 160);
+            dinosaurs.Add(dino1);
+            dinosaurs.Add(dino2);
+            dinosaurs.Add(dino3);
+        }
+
+        public void DinoDying()
+        {
+            if (dino1.health <= 0)
+            {
+                dinosaurs.Remove(dino1);
+            }
+            if (dino2.health <= 0)
+            {
+                dinosaurs.Remove(dino2);
+            }
+            if (dino3.health <= 0)
+            {
+                dinosaurs.Remove(dino3);
+            }
         }
     }
 }
