@@ -14,7 +14,7 @@ namespace RobotsVDinosaurs
         public void AttackingDino()
         {
             fleet.robot1.AttackDino(herd.dino1);
-            Dinosaur dino = herd.dino1;
+            
             //fleet.robot2.AttackDino(herd.dino2);
             //Dinosaur dinoTwo = herd.dino2;
             //fleet.robot3.AttackDino(herd.dino3);
@@ -37,6 +37,8 @@ namespace RobotsVDinosaurs
                 AttackingDino();
                 double newRobotHealth = fleet.robot1.health;
                 double newDinoHealth = herd.dino1.health;
+                
+
                 Console.WriteLine($"The Robots health is {newRobotHealth}. The Dinosaurs health is {newDinoHealth}. ");
                 Console.ReadLine();
 
