@@ -26,7 +26,15 @@ namespace RobotsVDinosaurs
 
         public void AttackRobot(Robot robo)
         {
-            if (attackPower >= 120)
+            if (attackPower >= 150)
+            {
+                robo.health -= 35;
+            }
+            else if (attackPower >= 130)
+            {
+                robo.health -= 25;
+            }
+            else if (attackPower >= 120)
             {
                 robo.health -= 20;
             }

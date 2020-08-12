@@ -11,7 +11,7 @@ namespace RobotsVDinosaurs
         public double battleNumber = 0;
         Fleet fleet = new Fleet();
         Herd herd = new Herd();
-        Random rand;
+        Random rand = new Random();
 
         public void AttackingDino()
         {
@@ -65,20 +65,22 @@ namespace RobotsVDinosaurs
 
             foreach(Robot robot in fleet.robots)
             {
-                Console.WriteLine($"Robot: {robot.name}  Health: {robot.health} ");
-                Console.ReadLine();
+                Console.WriteLine($"Robot: {robot.name}. His Health is: {robot.health} ");
+                Console.WriteLine("--------------------");
+                
             }
-
-            foreach(Dinosaur dinosaur in herd.dinosaurs)
+            Console.ReadLine();
+            foreach (Dinosaur dinosaur in herd.dinosaurs)
             {
                 Console.WriteLine($"Dinosaur: {dinosaur.type}  Health: {dinosaur.health} ");
-                Console.ReadLine();
+                Console.WriteLine("--------------------");
+                
             }
-
-            Console.WriteLine(" ");
-            Console.WriteLine(" ");
-            Console.WriteLine(" ");
             Console.ReadLine();
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            
 
 
         }
@@ -87,37 +89,44 @@ namespace RobotsVDinosaurs
         {
             while (fleet.robots.Count >= 1 && herd.dinosaurs.Count >= 1)
             {
-                AttackingRobot();
-                AttackingDino();
+                int randomNumber = rand.Next(1, 3);
+                
+                if (randomNumber == 1)
+                {
+                    AttackingRobot();
+                    Console.WriteLine("The Dinosaurs attacked the robots!");
+                    Console.WriteLine(" ");
+                    
+                }
+                else
+                {
+                    AttackingDino();
+                    Console.WriteLine("The Robots attacked the Dinosaurs! ");
+                    Console.WriteLine(" ");
+                    
+                }
+                
 
                 BattleOverview();
-
-
-
 
                 fleet.RobotDying();
                 herd.DinoDying();
                 
-
-
-
             }
 
             ConclusionOfBattle();
-
-
         }
 
         public void ConclusionOfBattle()
         {
             if (fleet.robots.Count == 0)
             {
-                Console.WriteLine("The battle is over, the Dinosaurs have won!");
+                Console.WriteLine("The war is over, the Dinosaurs have won!");
                 Console.ReadLine();
             }
             else if (herd.dinosaurs.Count == 0)
             {
-                Console.WriteLine("The battle is over, the Robots have won!");
+                Console.WriteLine("The war is over, the Robots have won!");
                 Console.ReadLine();
             }
         }
