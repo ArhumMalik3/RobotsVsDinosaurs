@@ -17,9 +17,9 @@ namespace RobotsVDinosaurs
 
         public Herd()
         {
-            dino1 = new Dinosaur("Tryannosaurus", 70, 100, 170);
-            dino2 = new Dinosaur("Triceratops", 110, 100, 110);
-            dino3 = new Dinosaur("Velociraptor", 90, 100, 160);
+            dino1 = new Dinosaur("Tryannosaurus", 100, 100, 170);
+            dino2 = new Dinosaur("Triceratops", 120, 100, 120);
+            dino3 = new Dinosaur("Velociraptor", 120, 100, 140);
             dinosaurs.Add(dino1);
             dinosaurs.Add(dino2);
             dinosaurs.Add(dino3);

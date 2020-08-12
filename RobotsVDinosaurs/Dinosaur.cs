@@ -28,7 +28,7 @@ namespace RobotsVDinosaurs
         {
             if (attackPower >= 150)
             {
-                robo.health -= 35;
+                robo.health -= 40;
             }
             else if (attackPower >= 130)
             {

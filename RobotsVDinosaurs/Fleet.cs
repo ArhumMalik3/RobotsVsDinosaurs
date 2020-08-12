@@ -19,9 +19,9 @@ namespace RobotsVDinosaurs
         //Constructor
         public Fleet()
         {
-            robot1 = new Robot("Optimus Prime", 200, 4, Sword, 110);
-            robot2 = new Robot("R2-D2", 90, 6, Sword, 120);
-            robot3 = new Robot("Mars Rover", 95, 5, Sword, 110);
+            robot1 = new Robot("Optimus Prime", 230, 4, Sword, 120);
+            robot2 = new Robot("R2-D2", 105, 6, Sword, 120);
+            robot3 = new Robot("Mars Rover", 100, 5, Sword, 110);
             robots.Add(robot1);
             robots.Add(robot2);
             robots.Add(robot3);

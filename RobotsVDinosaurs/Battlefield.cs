@@ -13,6 +13,8 @@ namespace RobotsVDinosaurs
         Herd herd = new Herd();
         Random rand = new Random();
 
+
+        //All the robots attack the first dinosaur until his health is dead and vice versa
         public void AttackingDino()
         {
             if (fleet.robots.Count == 3)
